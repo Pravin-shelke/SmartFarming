@@ -1,17 +1,19 @@
 import React from 'react';
+
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import * as theme from './theme';
+import { Image,StyleSheet } from 'react-native';
 
 export default {
   'light': {
     name: 'Soil Report',
     icon: ({size, color, ...props}) => (
-      <MaterialCommunityIcons
-        size={size || theme.sizes.font}
-        color={color || theme.colors.accent}
-        name="lightbulb-on-outline"
+      <Image
+      source={require('./Images/onboarding3.png')}
+      style={{ width: 40, height: 40 }}
+     
         {...props}
       />
     ),
@@ -19,10 +21,9 @@ export default {
   'ac': {
     name: 'Wether',
     icon: ({size, color, ...props}) => (
-      <MaterialCommunityIcons
-        size={size || theme.sizes.font}
-        color={color || theme.colors.accent}
-        name="air-conditioner"
+      <Image
+      source={require('./Images/wether.png')}
+      style={{ width: 40, height: 40 }}
         {...props}
       />
     ),
@@ -30,10 +31,9 @@ export default {
   'temperature': {
     name: 'Temperature',
     icon: ({size, color, ...props}) => (
-      <MaterialCommunityIcons
-        size={size || theme.sizes.font}
-        color={color || theme.colors.accent}
-        name="temperature-celsius"
+      <Image
+      source={require('./Images/temp.png')}
+      style={{ width: 40, height: 40 }}
         {...props}
       />
     ),
@@ -41,10 +41,9 @@ export default {
   'fan': {
     name: 'Recomadation',
     icon: ({size, color, ...props}) => (
-      <MaterialCommunityIcons
-        size={size || theme.sizes.font}
-        color={color || theme.colors.accent}
-        name="fan"
+      <Image
+      source={require('./Images/recom.png')}
+      style={{ width: 40, height: 40 }}
         {...props}
       />
     ),
@@ -52,10 +51,9 @@ export default {
   'wi-fi': {
     name: 'Seeds',
     icon: ({size, color, ...props}) => (
-      <FontAwesome
-        size={size || theme.sizes.font}
-        color={color || theme.colors.accent}
-        name="wifi"
+      <Image
+      source={require('./Images/seeds.png')}
+      style={{ width: 40, height: 40 }}
         {...props}
       />
     ),
@@ -63,10 +61,9 @@ export default {
   'electricity': {
     name: 'Histrory',
     icon: ({size, color, ...props}) => (
-      <MaterialIcons
-        size={size || theme.sizes.font}
-        color={color || theme.colors.accent}
-        name="power"
+      <Image
+      source={require('./Images/history.png')}
+      style={{ width: 40, height: 40 }}
         {...props}
       />
     ),

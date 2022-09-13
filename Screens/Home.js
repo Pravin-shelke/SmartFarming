@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { ScrollView, StyleSheet, TouchableOpacity ,Image} from 'react-native';
 
 import * as theme from '../theme';
 import { Block, Text } from '../components';
@@ -19,12 +19,16 @@ class Home extends Component {
     const ElectricityIcon = settings['electricity'].icon;
 
     return (
+
+     
+      
       <Block style={styles.Home }>
         <Block column style={{ marginVertical: theme.sizes.base * 2, }}>
           <Text welcome>Hello</Text>
           <Text name>Pravin Shelke</Text>
+         
         </Block>
-        
+      
         <Block row style={{ paddingVertical: 5 }}>
           <Block flex={1.5} row style={{ alignItems: 'flex-end', }}>
             <Text h1>34</Text>
@@ -38,8 +42,9 @@ class Home extends Component {
             <Block row space="around" style={{ marginVertical: theme.sizes.base }}>
               <TouchableOpacity
                 activeOpacity={0.8}
-                onPress={() => navigation.navigate('Settings', { name: 'light' })}
+                onPress={() => navigation.navigate('Settings', { name: 'Soil Report' })}
               >
+              
                 <Block center middle style={styles.button}>
                   <LightIcon size={38} />
                   <Text
@@ -162,3 +167,4 @@ const styles = StyleSheet.create({
     borderRadius: 151 / 2,
   }
 })
+
